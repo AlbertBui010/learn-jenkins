@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                echo "Adding trigger for build stage"
                 echo "Building from Jenkinsfile in GitHub..."
                 sh '''
                     echo "doing build stuff..."
